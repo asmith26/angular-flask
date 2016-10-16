@@ -1,5 +1,7 @@
 'use strict';
 
+// create an application with a module called "AngularFlask", which has a depencency (which is another angular module) "angularFlaskServices"
+// NOTE: with the [] dependency part, `angular.module("AngularFlask")` would get the module (as opposed to creating)
 angular.module('AngularFlask', ['angularFlaskServices'])
 	.config(['$routeProvider', '$locationProvider',
 		function($routeProvider, $locationProvider) {
